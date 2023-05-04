@@ -1,0 +1,27 @@
+<div style="width: 400px;">
+  <form >
+    <div class="form-group">
+      <label for="ProductCode">ProductCode</label>
+      <input type="text" class="form-control" id="ProductCode" required name="ProductCode" [(ngModel)]="product.ProductCode">
+    </div>
+    <div class="form-group">
+      <label for="Description">Description</label>
+      <input type="text" class="form-control" id="Description" required  name="Description" [(ngModel)]="product.Description">
+    </div>
+
+    <div class="form-group">
+      <label for="UnitOfMeasurement">UnitOfMeasurement</label>
+      <input type="text" class="form-control" id="UnitOfMeasurement" required name="UnitOfMeasurement" [(ngModel)]="product.UnitOfMeasurement">
+    </div>
+
+    <div class="form-group">
+      <label for="Price">Price</label>
+      <input type="text" class="form-control" id="Price" required  name="Price" [(ngModel)]="product.Price">
+    </div>
+    <div class="form-group">
+      <label for="Picture">Picture </label>
+      <input type="url" class="form-control" id="Picture" required  name="Picture" [(ngModel)]="product.Picture">
+    </div>
+    <button class="btn btn-success" (click)="onProductAdded()">Submit</button>
+  </form>
+</div>

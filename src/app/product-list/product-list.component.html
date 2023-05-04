@@ -1,0 +1,16 @@
+<td>{{element.ProductCode}}</td>
+<td>{{element.Description}}</td>
+<td>{{element.UnitOfMeasurement}}</td>
+<td>{{element.Price}}</td>
+<td>
+<span class="pull-right">
+<img src={{element.Picture}} class="img-responsive" style="max-height: 50px;" />
+</span>
+</td>
+<td>
+<button (click)="deleteEmployee(element.id)" class="btn btn-primary">Edit</button>
+<button (click)="deleteEmployee(element.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+<button (click)="employeeDetails(element.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+</td>
+          
+
